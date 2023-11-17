@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/ServicioWebSOAP_GUIA_U1/WSOperations?WSDL" uri="xml-resources/web-service-references/WSOperations/wsdl/localhost_8080/ServicioWebSOAP_GUIA_U1/WSOperations.wsdl"/>
+    <system systemId="http://localhost:8080/ServicioWebSOAP_GUIA_U1/WSOperations?xsd=1" uri="xml-resources/web-service-references/WSOperations/wsdl/localhost_8080/ServicioWebSOAP_GUIA_U1/WSOperations.xsd_1.xsd"/>
+</catalog>

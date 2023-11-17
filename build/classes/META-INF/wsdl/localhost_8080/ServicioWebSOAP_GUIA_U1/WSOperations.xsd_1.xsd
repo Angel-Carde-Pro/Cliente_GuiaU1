@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.0 (wsit240-7e98ff4; 2017-08-03T21:19:54+0200) JAXWS-RI/2.3.0 JAXWS-API/2.3.0 JAXB-RI/2.3.0 JAXB-API/2.3.0 svn-revision#unknown. --><xs:schema xmlns:tns="http://ws/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ws/">
+
+<xs:element name="DistanciaCarro" type="tns:DistanciaCarro"/>
+
+<xs:element name="DistanciaCarroResponse" type="tns:DistanciaCarroResponse"/>
+
+<xs:element name="EnergiaPotencial" type="tns:EnergiaPotencial"/>
+
+<xs:element name="EnergiaPotencialResponse" type="tns:EnergiaPotencialResponse"/>
+
+<xs:element name="KelvinToCelsiusConverter" type="tns:KelvinToCelsiusConverter"/>
+
+<xs:element name="KelvinToCelsiusConverterResponse" type="tns:KelvinToCelsiusConverterResponse"/>
+
+<xs:element name="Login" type="tns:Login"/>
+
+<xs:element name="LoginResponse" type="tns:LoginResponse"/>
+
+<xs:element name="division" type="tns:division"/>
+
+<xs:element name="divisionResponse" type="tns:divisionResponse"/>
+
+<xs:element name="multiplicacion" type="tns:multiplicacion"/>
+
+<xs:element name="multiplicacionResponse" type="tns:multiplicacionResponse"/>
+
+<xs:element name="resta" type="tns:resta"/>
+
+<xs:element name="restaResponse" type="tns:restaResponse"/>
+
+<xs:element name="suma" type="tns:suma"/>
+
+<xs:element name="sumaResponse" type="tns:sumaResponse"/>
+
+<xs:complexType name="resta">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="restaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Login">
+<xs:sequence>
+<xs:element name="usuario" type="xs:string" minOccurs="0"/>
+<xs:element name="contrasena" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="LoginResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DistanciaCarro">
+<xs:sequence>
+<xs:element name="velocidad" type="xs:int"/>
+<xs:element name="tiempo" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="DistanciaCarroResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EnergiaPotencial">
+<xs:sequence>
+<xs:element name="masa" type="xs:int"/>
+<xs:element name="altura" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="EnergiaPotencialResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicacion">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="multiplicacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="division">
+<xs:sequence>
+<xs:element name="a" type="xs:double"/>
+<xs:element name="b" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="divisionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="suma">
+<xs:sequence>
+<xs:element name="a" type="xs:int"/>
+<xs:element name="b" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sumaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="KelvinToCelsiusConverter">
+<xs:sequence>
+<xs:element name="kelvin" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="KelvinToCelsiusConverterResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
